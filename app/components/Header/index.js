@@ -8,7 +8,7 @@ const Header = ({ back, title, icon }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={back} activeOpacity={0.5} style={styles.left}>
-                <Image style={styles.back} source={backButton} />
+                {back && <Image style={styles.back} source={backButton} />}
             </TouchableOpacity>
             <View style={styles.middle}>
                 {icon ? <Image style={styles.headerIcon} source={icon} /> : <Text style={styles.middleText}>{title}</Text>}

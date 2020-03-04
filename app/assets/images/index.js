@@ -48,6 +48,10 @@ const images = {
         },
         conversation: require('./messages.png'),
         phone: require('./phone.png'),
+    },
+    addNewPost: {
+        smallLogo: require('./small-logo.png'),
+        addNewPost: require('./add-new-post.png'),
     }
 }
 
