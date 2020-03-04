@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
         lineHeight: 34,
         color: '#ffffff',
         fontFamily: 'OpenSans-Light'
+    },
+    headerIcon: {
+        width: 30,
+        height: 30
     }
 })
 

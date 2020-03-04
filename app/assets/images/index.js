@@ -32,6 +32,21 @@ const images = {
         motor: require('./motor.png'),
         price: require('./price.png'),
         starred: require('./starred.png'),
+    },
+    post: {
+        smallLogo: require('./small-logo.png'),
+        postInfo: {
+            marke: require('./marke.png'),
+            model: require('./model.png'),
+            seats: require('./seats.png'),
+            colors: require('./colors.png'),
+            motor: require('./motor.png'),
+            carDoor: require('./car-door.png'),
+            carTable: require('./car-table.png'),
+            calendar: require('./calendar.png'),
+        },
+        conversation: require('./messages.png'),
+        phone: require('./phone.png'),
     }
 }
 

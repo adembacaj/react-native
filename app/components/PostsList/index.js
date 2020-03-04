@@ -11,7 +11,7 @@ import Footer from './Footer';
 const PostsList = (props) => {
     const [refreshing, refresh] = useState(false);
     const onRefresh = useCallback(() => { console.log('refresh the list') }, [])
-
+    const onPress = useCallback((item) => props.onItemPress(item))
     return (
         <FlatList
             refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
@@ -20,7 +20,7 @@ const PostsList = (props) => {
             data={data}
             style={styles.flatList}
             renderItem={({ item }) => (
-                <TouchableOpacity activeOpacity={0.8} style={styles.item}>
+                <TouchableOpacity onPress={() => onPress(item)} activeOpacity={0.8} style={styles.item}>
                     <Header {...item} />
                     <Middle {...item} />
                     <Footer {...item} />

@@ -6,11 +6,12 @@ import Search from '../../components/Search';
 import PostList from '../../components/PostsList';
 
 const Home = (props) => {
-    settings = useCallback(() => { props.navigation.navigate('Filters') }, [])
+    settings = useCallback(() => { props.navigation.navigate('Filters') }, []);
+    onItemPress = useCallback((item) => {props.navigation.navigate('Post', {item})}, [])
     return (
         <View style={styles.container}>
             <Search settings={settings} />
-            <PostList />
+            <PostList onItemPress={onItemPress} />
         </View>
     )
 }
