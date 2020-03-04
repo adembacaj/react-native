@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import styles from './style.js';
+import Search from '../../components/Search';
+import PostList from '../../components/PostsList';
 
 const MyPosts = (props) => {
+    const editPress = useCallback(() => {props.navigation.navigate('EditMyPost')}, [])
     return (
         <View style={styles.container}>
-            <Text>MyPosts</Text>
+            <Search settings={settings} />
+            <PostList isEdit={true} editPress={editPress} onItemPress={onItemPress} />
         </View>
     )
 }

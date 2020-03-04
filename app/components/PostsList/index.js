@@ -21,7 +21,7 @@ const PostsList = (props) => {
             style={styles.flatList}
             renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPress(item)} activeOpacity={0.8} style={styles.item}>
-                    <Header {...item} />
+                    <Header isEdit={props.isEdit} editPress={props.editPress} {...item} />
                     <Middle {...item} />
                     <Footer {...item} />
                 </TouchableOpacity>

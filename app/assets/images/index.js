@@ -32,6 +32,7 @@ const images = {
         motor: require('./motor.png'),
         price: require('./price.png'),
         starred: require('./starred.png'),
+        editPost: require('./edit-post.png')
     },
     post: {
         smallLogo: require('./small-logo.png'),

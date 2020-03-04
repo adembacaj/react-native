@@ -126,6 +126,24 @@ const styles = StyleSheet.create({
         lineHeight: 20,
         color: 'rgba(255, 0, 0, 0.5)',
         fontFamily: 'OpenSans-Bold'
+    },
+    edit: {
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        width: 30,
+        height: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(92, 102, 127, 0.9)',
+        borderWidth: 1,
+        borderColor: 'rgba(92, 102, 127, 0.3)',
+        borderTopRightRadius: 10,
+        borderBottomLeftRadius: 10,
+    },
+    editIcon: {
+        width: 15,
+        height: 15
     }
 })
 
