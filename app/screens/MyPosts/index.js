@@ -6,7 +6,7 @@ import Search from '../../components/Search';
 import PostList from '../../components/PostsList';
 
 const MyPosts = (props) => {
-    const editPress = useCallback(() => {props.navigation.navigate('EditMyPost')}, [])
+    const editPress = useCallback((item) => { props.navigation.navigate('EditMyPost', { item }) }, [])
     return (
         <View style={styles.container}>
             <Search settings={settings} />

@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { View, Text, Image, TouchableOpacity, FlatList, RefreshControl, ImageBackground } from 'react-native';
-import images from '../../assets/images';
+import { TouchableOpacity, FlatList, RefreshControl } from 'react-native';
 import styles from './style';
 import data from './data';
 
@@ -21,7 +20,7 @@ const PostsList = (props) => {
             style={styles.flatList}
             renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => onPress(item)} activeOpacity={0.8} style={styles.item}>
-                    <Header isEdit={props.isEdit} editPress={props.editPress} {...item} />
+                    <Header isEdit={props.isEdit} editPress={() => props.editPress(item)} {...item} />
                     <Middle {...item} />
                     <Footer {...item} />
                 </TouchableOpacity>

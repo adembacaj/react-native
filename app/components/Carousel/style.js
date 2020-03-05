@@ -26,6 +26,21 @@ const styles = StyleSheet.create({
     flatListContent: {
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    addNewImage: {
+        width: 80,
+        height: 40,
+        marginRight: 5,
+        borderWidth: 1,
+        borderStyle: 'dashed',
+        borderColor: 'rgba(92, 102, 127, 0.5)',
+        backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    addIcon: {
+        width: 25,
+        height: 25
     }
 })
 

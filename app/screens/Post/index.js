@@ -9,10 +9,10 @@ import PostInfo from '../../components/PostInfo';
 import PostDescription from '../../components/PostDescription';
 
 const Post = (props) => {
-    const [data, setdata] = useState([])
+    const [data, setData] = useState([])
     const { smallLogo, conversation, phone } = images.post;
     const back = useCallback(() => { props.navigation.goBack() }, []);
-    useEffect(() => { setdata(props.route.params.item) }, [props])
+    useEffect(() => { setData(props.route.params.item) }, [props])
     return (
         <View style={styles.container}>
             <Header back={back} icon={smallLogo} />

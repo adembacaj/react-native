@@ -52,6 +52,9 @@ const images = {
     addNewPost: {
         smallLogo: require('./small-logo.png'),
         addNewPost: require('./add-new-post.png'),
+    },
+    carousel: {
+        addNewPost: require('./add-new-post.png'),
     }
 }
 
