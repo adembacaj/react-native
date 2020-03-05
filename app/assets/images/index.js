@@ -61,6 +61,10 @@ const images = {
         smallLogo: require('./small-logo.png'),
         account: require('./account.png'),
     },
+    conversation: {
+        account: require('./account.png'),
+        smallLogo: require('./small-logo.png'),
+    }
 }
 
 export default images;
