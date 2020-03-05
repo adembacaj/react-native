@@ -6,7 +6,7 @@ import images from '../../assets/images';
 import Button from '../../components/Button';
 
 const Auth = (props) => {
-    useEffect(() => {props.navigation.navigate('Tabs')}, []) //TO-DO - this is just temporary
+    useEffect(() => {props.navigation.navigate('Messages')}, []) //TO-DO - this is just temporary
     const login = useCallback(() => {props.navigation.navigate('Login')}, []);
     const register = useCallback(() => {props.navigation.navigate('Register')}, []);
     return (

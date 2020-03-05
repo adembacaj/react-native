@@ -64,6 +64,11 @@ const images = {
     conversation: {
         account: require('./account.png'),
         smallLogo: require('./small-logo.png'),
+    },
+    messages: {
+        smallLogo: require('./small-logo.png'),
+        attach: require('./attach.png'),
+        send: require('./send.png'),
     }
 }
 
