@@ -3,7 +3,8 @@ const images = {
         logo: require('./logo.png'),
     },
     header: {
-        backButton: require('./left-arrow.png')
+        backButton: require('./left-arrow.png'),
+        logOut: require('./logout.png'),
     },
     login: require('./login.png'),
     forgot: require('./forgot.png'),
@@ -55,7 +56,11 @@ const images = {
     },
     carousel: {
         addNewPost: require('./add-new-post.png'),
-    }
+    },
+    profile: {
+        smallLogo: require('./small-logo.png'),
+        account: require('./account.png'),
+    },
 }
 
 export default images;
